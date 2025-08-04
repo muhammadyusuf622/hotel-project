@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Abdulloh Ergashev",
+    "email": "abdulloh.ergashev@hospital.uz",
+    "password": "director123",
+    "role": "director"
+  },
+  {
+    "id": 2,
+    "name": "Dilbar Karimova",
+    "email": "dilbar.karimova@hospital.uz",
+    "password": "director456",
+    "role": "director"
+  },
+  {
+    "id": 3,
+    "name": "Azizbek Rahmatov",
+    "email": "azizbek.rahmatov@hospital.uz",
+    "password": "admin123",
+    "role": "admin",
+    "branch": "Toshkent 1-filiali"
+  },
+  {
+    "id": 4,
+    "name": "Malika Qodirova",
+    "email": "malika.qodirova@hospital.uz",
+    "password": "admin456",
+    "role": "admin",
+    "branch": "Samarqand filial"
+  },
+  {
+    "id": 5,
+    "name": "Shahzoda Rustamova",
+    "email": "shahzoda.rustamova@gmail.com",
+    "password": "client123",
+    "role": "client",
+    "roomNumber": 203,
+    "userType": "guest",
+    "phone": "917809960"
+  },
+  {
+    "id": 6,
+    "name": "Jamshid Xoliqov",
+    "email": "jamshid.xoliqov@gmail.com",
+    "password": "client456",
+    "role": "client",
+    "roomNumber": 105,
+    "userType": "guest",
+    "phone": "917809960"
+  },
+  {
+    "id": 7,
+    "name": "Muhammad Nasrulloh",
+    "email": "salmo@gmail.com",
+    "password": "123assajSd",
+    "phone": "917809960",
+    "userType": "guest",
+    "role": "client",
+    "roomNumber": ""
+  },
+  {
+    "id": 8,
+    "name": "Muhammad Nasrulloh",
+    "email": "sdak@gmail.com",
+    "password": "qoda123DAa",
+    "phone": "917809960",
+    "userType": "business",
+    "role": "client",
+    "roomNumber": ""
+  },
+  {
+    "id": 9,
+    "name": "Muhammad Nasrulloh",
+    "email": "habcjabc@gmail.com",
+    "password": "2kjnxasnxW2",
+    "phone": "917809960",
+    "userType": "guest",
+    "role": "client",
+    "roomNumber": ""
+  },
+  {
+    "id": 10,
+    "name": "Muhammad Nasrulloh",
+    "email": "abajsd@gmail.com",
+    "password": "saladcjaodnc@21saqSd",
+    "phone": "917809960",
+    "userType": "guest",
+    "role": "client",
+    "roomNumber": ""
+  },
+  {
+    "id": 11,
+    "name": "Muhammad Nasrulloh",
+    "email": "sbaksdb@gmail.com",
+    "password": "213dahbSAd",
+    "phone": "917809960",
+    "userType": "guest",
+    "role": "client",
+    "roomNumber": ""
+  }
+]
