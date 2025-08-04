@@ -51,11 +51,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(
-    135deg,
-    var(--hotel-primary) 0%,
-    var(--hotel-secondary) 100%
-  );
+  background: linear-gradient(180deg, #4B2C20 0%, #8B4513 40%, #D2A679 100%),
 }
 
 .hotel-auth-card {
@@ -140,7 +136,6 @@ body {
   left: 0;
   right: 0;
   height: 1px;
-  background: #e8e8e8;
 }
 
 .hotel-divider span {
@@ -603,4 +598,17 @@ body {
 /* Enhanced Layout Styles */
 .ant-layout {
   background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.custom-sidebar .ant-menu-item {
+  color: white;
+}
+
+.custom-sidebar .ant-menu-item:hover {
+  color: #ffcc00; /* yoki boshqa rang */
+}
+
+.custom-sidebar .ant-menu-item-selected {
+  color: #ffcc00;
+  background-color: transparent; /* fon rangini o‘chirish */
 }

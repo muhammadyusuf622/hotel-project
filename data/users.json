@@ -51,52 +51,12 @@
   },
   {
     "id": 7,
-    "name": "Muhammad Nasrulloh",
-    "email": "salmo@gmail.com",
-    "password": "123assajSd",
+    "name": "Muhammad Yusuf Nasrulloh",
+    "email": "salom@gmail.com",
+    "password": "salomHam123",
     "phone": "917809960",
     "userType": "guest",
-    "role": "client",
-    "roomNumber": ""
-  },
-  {
-    "id": 8,
-    "name": "Muhammad Nasrulloh",
-    "email": "sdak@gmail.com",
-    "password": "qoda123DAa",
-    "phone": "917809960",
-    "userType": "business",
-    "role": "client",
-    "roomNumber": ""
-  },
-  {
-    "id": 9,
-    "name": "Muhammad Nasrulloh",
-    "email": "habcjabc@gmail.com",
-    "password": "2kjnxasnxW2",
-    "phone": "917809960",
-    "userType": "guest",
-    "role": "client",
-    "roomNumber": ""
-  },
-  {
-    "id": 10,
-    "name": "Muhammad Nasrulloh",
-    "email": "abajsd@gmail.com",
-    "password": "saladcjaodnc@21saqSd",
-    "phone": "917809960",
-    "userType": "guest",
-    "role": "client",
-    "roomNumber": ""
-  },
-  {
-    "id": 11,
-    "name": "Muhammad Nasrulloh",
-    "email": "sbaksdb@gmail.com",
-    "password": "213dahbSAd",
-    "phone": "917809960",
-    "userType": "guest",
-    "role": "client",
+    "role": "director",
     "roomNumber": ""
   }
 ]

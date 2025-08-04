@@ -1,0 +1,452 @@
+.adminLayout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+}
+
+.adminSider {
+  background: linear-gradient(180deg, #4b2c20 0%, #8b4513 40%, #d2a679 100%);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.adminHeader {
+  background: white;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminContent {
+  margin: 24px;
+  background: transparent;
+}
+
+.dashboardCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dashboardCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.statCard {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.statCard.success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.statCard.warning {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.statCard.info {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.roomCard {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-left: 4px solid #4b2c20;
+  transition: all 0.3s ease;
+}
+
+.roomCard:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.roomStatus {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.roomStatus.available {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
+.roomStatus.occupied {
+  background: #fff2e8;
+  color: #fa8c16;
+}
+
+.roomStatus.cleaning {
+  background: #f6ffed;
+  color: #52c41a;
+}
+
+.roomStatus.maintenance {
+  background: #fff1f0;
+  color: #ff4d4f;
+}
+
+.customerCard {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-left: 4px solid #8b4513;
+  transition: all 0.3s ease;
+}
+
+.customerCard:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.complaintCard {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-left: 4px solid #ff4d4f;
+  transition: all 0.3s ease;
+}
+
+.complaintCard:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.complaintStatus {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.complaintStatus.pending {
+  background: #fff7e6;
+  color: #fa8c16;
+}
+
+.complaintStatus.resolved {
+  background: #f6ffed;
+  color: #52c41a;
+}
+
+.complaintStatus.urgent {
+  background: #fff1f0;
+  color: #ff4d4f;
+}
+
+.chartContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.tableContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+}
+
+.searchInput:focus {
+  border-color: #8b4513;
+  box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+}
+
+.filterButton {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  color: #8b4513;
+}
+
+.filterButton:hover {
+  border-color: #8b4513;
+  color: #8b4513;
+}
+
+.filterButton.active {
+  background: #8b4513;
+  color: white;
+  border-color: #8b4513;
+}
+
+.actionButton {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.actionButton.primary {
+  background: #8b4513;
+  border-color: #8b4513;
+  color: white;
+}
+
+.actionButton.primary:hover {
+  background: #6b3410;
+  border-color: #6b3410;
+}
+
+.actionButton.success {
+  background: #52c41a;
+  border-color: #52c41a;
+  color: white;
+}
+
+.actionButton.warning {
+  background: #fa8c16;
+  border-color: #fa8c16;
+  color: white;
+}
+
+.actionButton.danger {
+  background: #ff4d4f;
+  border-color: #ff4d4f;
+  color: white;
+}
+
+.modalHeader {
+  background: linear-gradient(135deg, #4b2c20 0%, #8b4513 100%);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.modalBody {
+  padding: 24px;
+}
+
+.formItem {
+  margin-bottom: 16px;
+}
+
+.formItem label {
+  font-weight: 500;
+  color: #333;
+}
+
+.formInput {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+}
+
+.formInput:focus {
+  border-color: #8b4513;
+  box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+}
+
+.formSelect {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+}
+
+.formSelect:focus {
+  border-color: #8b4513;
+  box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+}
+
+.formTextarea {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+}
+
+.formTextarea:focus {
+  border-color: #8b4513;
+  box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+}
+
+.notificationBadge {
+  background: #ff4d4f;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.timelineItem {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.timelineItem:last-child {
+  border-bottom: none;
+}
+
+.timelineTime {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+.timelineContent {
+  margin-top: 4px;
+  color: #333;
+}
+
+.quickActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.quickActionButton {
+  border-radius: 20px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  color: #8b4513;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.quickActionButton:hover {
+  border-color: #8b4513;
+  color: #8b4513;
+  transform: translateY(-1px);
+}
+
+.quickActionButton.active {
+  background: #8b4513;
+  color: white;
+  border-color: #8b4513;
+}
+
+.statusIndicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.statusIndicator.online {
+  background: #52c41a;
+}
+
+.statusIndicator.offline {
+  background: #ff4d4f;
+}
+
+.statusIndicator.busy {
+  background: #fa8c16;
+}
+
+.avatarGroup {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avatar:not(:first-child) {
+  margin-left: -8px;
+}
+
+.progressBar {
+  border-radius: 10px;
+  height: 8px;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progressFill.success {
+  background: linear-gradient(90deg, #52c41a 0%, #73d13d 100%);
+}
+
+.progressFill.warning {
+  background: linear-gradient(90deg, #fa8c16 0%, #ffc53d 100%);
+}
+
+.progressFill.danger {
+  background: linear-gradient(90deg, #ff4d4f 0%, #ff7875 100%);
+}
+
+.progressFill.info {
+  background: linear-gradient(90deg, #1890ff 0%, #40a9ff 100%);
+}
+
+.tooltip {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  max-width: 200px;
+}
+
+.dropdownMenu {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #f0f0f0;
+}
+
+.dropdownItem {
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.dropdownItem:hover {
+  background: #f5f5f5;
+}
+
+.dropdownItem.danger {
+  color: #ff4d4f;
+}
+
+.dropdownItem.danger:hover {
+  background: #fff1f0;
+}
+
+.responsiveGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.responsiveGrid div{
+  width: 300px;
+  padding-right: 95px;
+}
+
+@media (max-width: 768px) {
+  .responsiveGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminContent {
+    margin: 12px;
+  }
+
+  .dashboardCard {
+    padding: 16px;
+  }
+
+  .statCard {
+    padding: 16px;
+  }
+}

@@ -4,17 +4,45 @@ import React, { useState } from "react";
 import { Form, Input, Button, Checkbox, message } from "antd";
 import { UserOutlined, LockOutlined, HomeOutlined } from "@ant-design/icons";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
-  const onFinish = async (values: any) => {
+  const onFinish = async (values: {
+    email: string;
+    password: string;
+    remember: number;
+  }) => {
     setLoading(true);
     try {
-      // Bu yerda API chaqiruvini qo'shishingiz mumkin
-      console.log("Login values:", values);
+      const res = await fetch("/api/users");
+      const data = await res.json();
+      console.log(data);
+      const checkRole = data.data.find((item: any) => item.email == values.email);
+
+      if(values.password !== checkRole.password){
+        toast.error("Xato parol kiritildi");
+        return
+      }
+
+      if(!checkRole){
+        toast.error('Foydalanuvchi topilmadi');
+        return;
+      }
+
+      localStorage.setItem('user', JSON.stringify({id: checkRole.id, name: checkRole.name}))
+      if(checkRole.role == 'client'){
+        router.push('/');
+      } else if (checkRole.role == 'admin') {
+        router.push('/admin')
+      } else if (checkRole.role == "director") {
+        router.push('/derector')
+      }
+
       message.success("Muvaffaqiyatli kirish!");
-      // Router.push('/dashboard') - keyinroq qo'shishingiz mumkin
     } catch (error) {
       message.error("Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.");
     } finally {
