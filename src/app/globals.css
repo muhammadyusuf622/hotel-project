@@ -612,3 +612,9 @@ body {
   color: #ffcc00;
   background-color: transparent; /* fon rangini o‘chirish */
 }
+
+
+/* styles/global.css */
+.ant-menu-dark .ant-menu-item-selected {
+  color: gold !important;
+}
