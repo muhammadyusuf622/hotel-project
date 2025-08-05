@@ -47,13 +47,6 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("user") as string);
-    if (!data) {
-      router.push("/register");
-    }
-  }, []);
-
-  useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
