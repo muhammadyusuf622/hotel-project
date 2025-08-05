@@ -368,13 +368,14 @@ const AdminPage = () => {
         </div>
 
         <Menu
+          theme="dark"
           mode="inline"
           selectedKeys={[selectedMenu]}
           style={{
             background: "transparent",
             color: "white",
             border: "none",
-            fontSize: "18px",
+            fontSize: "20px",
           }}
           items={menuItems}
           onClick={({ key }) => setSelectedMenu(key)}

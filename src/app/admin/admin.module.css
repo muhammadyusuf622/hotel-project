@@ -433,6 +433,11 @@
   padding-right: 95px;
 }
 
+:global(.ant-menu-dark .ant-menu-item-selected) {
+  color: gold !important;
+}
+
+
 @media (max-width: 768px) {
   .responsiveGrid {
     grid-template-columns: 1fr;
